@@ -1,12 +1,12 @@
 #!/usr/bin/env bash 
 
 
-#      ▇▇▇                                       ▇▇▇               ▄▇▇▇▇▇▄                 ▇▇                                    ▇▇                
-#      ▇▇        ▇                        ▇       ▇▇             ▄▇                ▇▄                        ▇▇                  ▇▇
-#      ▇▇          ▇ @auuuvu   ▇         ▇▇            ▄▇▄▄▄▄▄▇▄                               ▇▇ ▇▇
-#      ▇▇             ▇             ▇             ▇▇        ▄▇                            ▇▄                          ▇▇ ▇▇ ¦ Dev : @auuuvu
-#      ▇▇                ▇       ▇                ▇▇      ▄▇ ¦ Dev : @auuuvu  ▇▄                 ▇▇                 ▇▇
-#      ▇▇                   ▇▇                    ▇▇     ▄▇                                    ▇▄      ▇▇                                  ▇▇¦ Source MAX BY @auuuvu
+#                                  @𝑋𝐵_0𝐵
+#   @𝑋𝐵_0𝐵
+#     
+#                @𝑋𝐵_0𝐵
+#                                @𝑋𝐵_0𝐵
+#                                                            @𝑋𝐵_0𝐵
 #---------------------------------------------------------------------
 cd $(cd $(dirname $0); pwd)
  
@@ -22,16 +22,16 @@ Version=`lsb_release -rs | cut -f1 -d"."`
 
 if [ "$Version" == "18" ];then
 echo -e "${GREEN}
-▇▇▇                                       ▇▇▇               ▄▇▇▇▇▇▄                 ▇▇                                    ▇▇                
-▇▇        ▇                        ▇       ▇▇             ▄▇                ▇▄                        ▇▇                  ▇▇
-▇▇          ▇ @auuuvu   ▇         ▇▇            ▄▇▄▄▄▄▄▇▄                               ▇▇ ▇▇
-▇▇             ▇             ▇             ▇▇        ▄▇                            ▇▄                          ▇▇ ▇▇ ¦ Dev : @auuuvu
-▇▇                ▇       ▇                ▇▇      ▄▇ ¦ Dev : @auuuvu  ▇▄                 ▇▇                 ▇▇
-▇▇                   ▇▇                    ▇▇     ▄▇                                    ▇▄      ▇▇                                  ▇▇¦ Source MAX BY @auuuvu
+
+                    
+       ▇ @𝑋𝐵_0𝐵   ▇                     ▄▇▄▄▄▄▄▇▄                            
+    ▄▇                                           ¦ Dev : @𝑋𝐵_0𝐵
+ ▄▇ ¦ Dev : @𝑋𝐵_0𝐵                    
+                                                               ¦ Source HKEM BY @𝑋𝐵_0𝐵
 ----------------------------------------------------------------------${CNIL}"
 echo -e "${RED}| للاسف لايمكنك تنصيب السورس ع نظام اوبنتو {${Version}} يجب ان يكون على اصدار  اقل مثلا  ${SMAY}14 او 16
 ${CNIL}";
-echo -e "${RED}| Sorry Canot install Source on Ubuntu {${Version}} Please install system To Ubuntu ${SMAY}14 or 16 ${RED} For Run The Source MAX 
+echo -e "${RED}| Sorry Canot install Source on Ubuntu {${Version}} Please install system To Ubuntu ${SMAY}14 or 16 ${RED} For Run The Source HKEM 
 ${CNIL}";
 exit;
 fi
@@ -41,7 +41,7 @@ if [ ! -f "./TG" ]; then
 echo -e "${RED}
 ¦
 ¦ CAUTION:${WHITB} Your Not Dwonload TG .
-¦ NOW I Run File ${Yellow}./run${WHITB} To install ${SMAY}Source MAX${CNIL} . \n
+¦ NOW I Run File ${Yellow}./run${WHITB} To install ${SMAY}Source HKEM${CNIL} . \n
 \n\n"
 chmod +x ./ins
 ./ins
@@ -70,10 +70,10 @@ sudo rm -fr ../.telegram-cli
 done
 else
 
-if ! screen -list | grep -q "max"; then
-screen -S max ./run R
+if ! screen -list | grep -q "HKEM"; then
+screen -S HKEM ./run R
 fi
-screen -S max -X kill
-screen -S max ./run R
+screen -S HKEM -X kill
+screen -S HKEM ./run R
 fi
 
